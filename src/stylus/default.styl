@@ -1,0 +1,151 @@
+* {margin:0; padding:0; background: transparent}
+img{border:none; outline:none}
+html,body {height: 100%}
+html{width: 100vw; overflow-x: hidden;}
+
+input, button, select, textarea
+  border none
+  outline none
+body *
+  box-sizing: border-box
+
+.cf:after
+  content: '';
+  display: block;
+  float: none !important;
+  clear: both !important;
+.clr{clear: both; display block; height 0}
+.usn{user-select: none;}
+.pen{pointer-events:none;}
+.fl{float:left;}
+.fr{float:right}
+.b{display:block}
+.abs{position: absolute}
+.rel{position: relative}
+.hide{display:none;}
+.dtc{display:table-cell}
+
+trans(s)
+  transition: all s ease-in-out;
+bg(s)
+  background s
+body {
+  font-family "Open Sans", sans-serif
+}
+
+a
+  text-decoration none
+
+
+size($width, $height = $width)
+  width $width
+  height $height
+
+dtc-size($width, $height = $width)
+  width $width
+  height $height
+  img
+    max-width $width
+    max-height $height
+
+.dtc_img
+  display table-cell
+  vertical-align middle
+  text-align center
+
+
+a_border($color = $black)
+  border-bottom 1px solid transparent
+  trans 0.25s
+  &:hover
+    trans 0.25s
+    border-bottom 1px solid $color
+
+.bold
+  font-weight bold
+
+.mw
+  width 1150px
+  margin 0 auto
+
+.btn
+  @extend .usn
+  bg #ffce0c
+  font-weight: 600;
+  color: #fff
+  text-align center
+  cursor pointer
+  box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.2)
+  transition 0.3s
+  &:hover
+    bg $red_hover
+    transition 0.3s
+  &:active
+    bg $red_active
+    transition 0.3s
+
+.btn_begin_free
+  @extend .usn
+  text-align center
+  cursor pointer
+  transition 0.3s
+  width 210px
+  line-height 45px
+  border 1px solid #6777bd
+  border-radius: 3px
+  margin-left 50px
+  .svg_wr
+    display inline-block
+    line-height 45px
+    padding 0 12px 0 0
+    position relative
+    top 2px
+    .svg
+      transition 0.2s
+  &:hover
+    bg #6777bd
+    transition 0.2s
+    color #fff
+    .svg_wr .svg
+      fill #fff
+      transition 0.2s
+  &:active
+    bg #6777bd
+    transition 0.2s
+    color #fff
+
+.btn_begin_earn
+  @extend .usn
+  text-align center
+  color #333333
+  cursor pointer
+  transition 0.3s
+  width 230px
+  line-height 50px
+  background-color #ffce0c
+  border-radius: 3px
+  border: 1px solid #ffce0c
+  .svg_wr
+    display inline-block
+    line-height 45px
+    padding 0 12px 0 0
+    position relative
+    top 2px
+    .svg
+      transition 0.2s
+  &:hover
+    bg #ffce0c
+    transition 0.2s
+    color #fff
+    .svg_wr .svg
+      fill #fff
+      transition 0.2s
+  &:active
+    bg #ffce0c
+    transition 0.2s
+    color #fff
+
+@media screen and (max-width: 1150px)
+  html
+    overflow auto
+    width 100%

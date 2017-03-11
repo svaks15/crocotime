@@ -1,0 +1,54 @@
+.main_header
+  width 1200px
+  height 100px
+  margin 0 auto
+  display flex
+  flex-direction row
+  align-items center
+  .logo
+    margin-right 70px
+
+    a
+      font-size 30px
+      color #333333
+      &:hover
+        color #6777bd
+
+.header_nav
+  a
+    font-size 16px
+    color #333333
+    padding 0 20px
+    &:hover
+      color #6777bd
+
+.header_enter
+  a
+    font-size 16px
+    color #333333
+    padding 0 35px 0 35px
+    &:hover
+      color #6777bd
+
+.language
+  display flex
+  a
+    font-size 16px
+    color #333333
+    padding 0 15px
+    display block
+    line-height 100px
+    position relative
+    &:hover
+      color #6777bd
+    &.active:after
+      content ' '
+      display block
+      position absolute
+      width 100%
+      height 4px
+      bottom 0
+      left 0
+      bg #6777bd
+
+

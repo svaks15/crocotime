@@ -1,0 +1,291 @@
+doctype html
+html
+    head
+        title Crocotime
+        meta(http-equiv="content-type" content="text/html;charset=utf-8")
+        link(rel="stylesheet" type="text/css" href="css/main.css")
+        link(rel="stylesheet" type="text/css" href="css/rangeslider.css")
+        link(rel="stylesheet" type="text/css" href="css/normalize.css")
+        link(rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css")
+        link(rel="stylesheet" type="text/css" href="css/ion.rangeSlider.skinNice.css")
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet")
+        //
+        script(src="js/jquery-1.8.1.min.js")
+        script(src="js/rangeslider.min.js")
+        script(src="js/ion.rangeSlider.min.js")
+
+        script(src="js/app.min.js")
+    body
+        header.main_header
+            .logo
+                a(href="/") CROCOTIME
+            nav.header_nav
+                a(href="#") О компании
+                a(href="#") Возможности
+                a(href="#") Тарифы
+                a(href="#") Клиенты
+
+            .btn_begin_free
+                span.svg_wr
+                    |  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><defs><style>.svg{fill: #6777bd; fill-rule: evenodd}</style></defs><path class="svg" d="M134,481a7,7,0,1,1,7-7A7,7,0,0,1,134,481Zm0-13a6,6,0,1,0,6,6A6,6,0,0,0,134,468Zm-0.367,9.182a0.5,0.5,0,0,1-.707-0.708L135.4,474l-2.475-2.474a0.5,0.5,0,1,1,.707-0.707l2.829,2.828a0.5,0.5,0,0,1,0,.707Z" transform="translate(-127 -467)"/></svg>
+                | Начать бесплатно
+
+            nav.header_enter
+                a(href="#") Войти
+
+            nav.language
+                a(href="#").active Ru
+                a(href="#") En
+
+        .partner_block
+            header.partner_header Партнерская программа
+            header.partner_text Начните зарабатывать до 40% омиссионных за один заказ вместе с CrocoTime
+            .btn_begin_earn
+                span.svg_wr
+                    |  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><defs><style>.svg{fill: #333333; fill-rule: evenodd}</style></defs><path class="svg" d="M134,481a7,7,0,1,1,7-7A7,7,0,0,1,134,481Zm0-13a6,6,0,1,0,6,6A6,6,0,0,0,134,468Zm-0.367,9.182a0.5,0.5,0,0,1-.707-0.708L135.4,474l-2.475-2.474a0.5,0.5,0,1,1,.707-0.707l2.829,2.828a0.5,0.5,0,0,1,0,.707Z" transform="translate(-127 -467)"/></svg>
+                | Начать зарабатывать
+
+        .work_scheme
+            header.block_header Схема работы с партнерами
+            .schemes_wr
+                .scheme_agent
+                    .block_content
+                        img(src='img/agent_icon.png')
+                        header.block_text Если вы хотите стать агентом
+
+                    .agent_and_diler_price
+                        header.price от 5 до 40% коммисионных за 1 сделку
+
+                    .instruction
+                        span.number_item.item_1 Вы находите клиента готового купить CrocoTime
+                        span.number_item.item_2 Согласовываете встречу с руководством или их передаете контактные данные
+                        span.number_item.item_3 Мы презентуем CrocoTime клиенту. Если контракт подписан, то вы получаете от 5 до 40% комиссионных за сделку
+                        span.number_item.item_4 При выполнении плана вы получаете дополнительные выплаты
+
+                    header.header_pluse Плюсы агента:
+
+                    .agent_and_diler_pluse
+                        span.pluse_item.item_1 Отсутствие рабочего времени, отчетов, договоров  и другой бумажной волокиты
+                        span.pluse_item.item_2 Нет первых взносов и начальных вложений
+                        span.pluse_item.item_3 Гарантированные своевременные выплаты
+
+                    header.header_pluse Рекомендуем:
+
+                    p.recommend.
+                        Пройдите бесплатное обучение в нашей компании, чтобы лучше разбираться системе и желаниях
+                        потенциальных клиентов
+
+                    .btn_begin_earn.btn_agent_and_diler
+                        span.svg_wr
+                            |  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><defs><style>.svg{fill: #333333; fill-rule: evenodd}</style></defs><path class="svg" d="M134,481a7,7,0,1,1,7-7A7,7,0,0,1,134,481Zm0-13a6,6,0,1,0,6,6A6,6,0,0,0,134,468Zm-0.367,9.182a0.5,0.5,0,0,1-.707-0.708L135.4,474l-2.475-2.474a0.5,0.5,0,1,1,.707-0.707l2.829,2.828a0.5,0.5,0,0,1,0,.707Z" transform="translate(-127 -467)"/></svg>
+                        | Хочу стать агентом
+
+                .scheme_agent
+                    .block_content
+                        img(src='img/diller_icon.png')
+                        header.block_text Если вы хотите стать диллером
+
+                    .agent_and_diler_price
+                        header.price вы сами назначаете стоимость продукта и доп. услуг
+
+                    .instruction
+                        span.number_item.item_1 Мы заключаем с вами партнерский договор
+                        span.number_item.item_2 Вы находите клиента готового купить программу.
+                        span.number_item.item_3 В зависимости от количества компьютеров, на которые клиент хочет установить CrocoTime мы передаем вам ключи от программы
+                        span.number_item.item_4 Все денежные выплаты за услуги (консалтинг, техническая поддержка, аудит и анализ), на которые вы подпишите своего клиента, останутся на ваших счетах
+                        span.number_item.item_5 При выполнении плана по покупке ключей вы получаете дополнительные выплаты
+
+                    header.header_pluse Плюсы диллеров:
+
+                    .agent_and_diler_pluse
+                        span.pluse_item.item_1 Своя наценка на основной продукт и дополнительные услуги
+                        span.pluse_item.item_2 Возможность развиваться под своим собственным брендом
+                        span.pluse_item.item_3 Гарантия своевременного получения ключей и технической поддержки
+
+                    header.header_pluse Рекомендуем:
+
+                    p.recommend.
+                        Отправьте своих сотрудников на бесплатное обучение,
+                        чтобы иметь возможность предлагать клиентам дополнительные услуги и повысить средний чек заказа.
+
+                    .btn_begin_earn.btn_agent_and_diler
+                        span.svg_wr
+                            |  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><defs><style>.svg{fill: #333333; fill-rule: evenodd}</style></defs><path class="svg" d="M134,481a7,7,0,1,1,7-7A7,7,0,0,1,134,481Zm0-13a6,6,0,1,0,6,6A6,6,0,0,0,134,468Zm-0.367,9.182a0.5,0.5,0,0,1-.707-0.708L135.4,474l-2.475-2.474a0.5,0.5,0,1,1,.707-0.707l2.829,2.828a0.5,0.5,0,0,1,0,.707Z" transform="translate(-127 -467)"/></svg>
+                        | Хочу быть диллером
+
+        .advantages
+            .advantages_block
+                header.advantages_header Преимущества нашей партнерской программы
+                ul.list_advantages
+                    li.list_item
+                        .circle_image.item_note
+                        .advantages_text Готовые схемы<br>продаж
+                        .advantages_content
+                            p.
+                                Мы передадим вам все рекламные, информационные и презентационные материалы с которыми
+                                привлечь клиента станет намного проще.
+
+                    li.list_item
+                        .circle_image.item_consalt
+                        .advantages_text Оперативный консалтинг<br>по работе программы
+                        .advantages_content
+                            p.
+                                В случае нестандартных или экстренных ситуаций вы всегда можете обратиться к нам.
+                                Мы поможем решить любой, даже очень сложный вопрос
+
+                    li.list_item
+                        .circle_image.item_rise
+                        .advantages_text Постоянно растущий<br>спрос
+                        .advantages_content
+                            p.
+                                Рынок продуктов контроля времени сейчас только начинает активно развиваться.
+                                Начав продавать сегодня можно стать лидером и заработать солидные деньги
+
+        .bonus_program_block
+            header.bonus_program_block_header Бонусная программа
+            .bonus_program_block_text
+                p.
+                    Мы очень заинтересованы в долгосрочном и взаимовыгодном сотрудничестве.
+                    Именно поэтому мы разработали бонусную программу,<br>которая позволит вам зарабатывать с CrocoTime еще больше
+            .bonus_program_block_switcher
+                a(href="#").bonus_program_block_switcher_agent Для агентов
+                a(href="#").bonus_program_block_switcher_diler Для диллеров
+            .bonus_program_block_switcher_content
+                table.bonus_program_block_switcher_left.left
+                    tr.bonus_program_block_switcher_left_header
+                        td Количество компьютеров, на которые<br>установят CrocoTime за 1 заказ
+                        td Комиссионные<br>за сделку
+                    tr.bonus_program_block_switcher_left_sw
+                        td до 350
+                        td.right_bold 20%
+                    tr.bonus_program_block_switcher_left_sw
+                        td от 351 до 550
+                        td.right_bold 30%
+                    tr.bonus_program_block_switcher_left_sw
+                        td более 550
+                        td.right_bold 40%
+                table.bonus_program_block_switcher_left.right
+                    tr.bonus_program_block_switcher_left_header
+                        td Количество подписанных договоров в месяц
+                        td Кэшбек
+                    tr.bonus_program_block_switcher_left_sw
+                        td 5
+                        td.right_bold 3%
+                    tr.bonus_program_block_switcher_left_sw
+                        td 10
+                        td.right_bold 5%
+                    tr.bonus_program_block_switcher_left_sw
+                        td.ob(colspan=2) Процент по кэшбеку рассчитывается от общей суммы заказов, которые<br>помог подписать агент за месяц
+            .btn_begin_earn
+                span.svg_wr
+                    |  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><defs><style>.svg{fill: #333333; fill-rule: evenodd}</style></defs><path class="svg" d="M134,481a7,7,0,1,1,7-7A7,7,0,0,1,134,481Zm0-13a6,6,0,1,0,6,6A6,6,0,0,0,134,468Zm-0.367,9.182a0.5,0.5,0,0,1-.707-0.708L135.4,474l-2.475-2.474a0.5,0.5,0,1,1,.707-0.707l2.829,2.828a0.5,0.5,0,0,1,0,.707Z" transform="translate(-127 -467)"/></svg>
+                | Хочу стать агентом
+
+        .income_block
+            header.income_block_header Рассчитайте свой доход
+            .income_block_text Воспользуйтесь нашим калькулятором чтобы расчитать приблизительно свой доход.
+            .bonus_program_block_switcher
+                a(href="#").bonus_program_block_switcher_agent Для агентов
+                a(href="#").bonus_program_block_switcher_diler Для диллеров
+            .income_block_calculate
+                .program_type
+                    header.income_block_calculate_header Тип проданных версий программы
+                    .btn_begin_free.income_block_calculate_btn Облачная
+
+                .license_amount
+                    header.income_block_calculate_header Среднее количество проданных лицензий в месяц
+                    #rangeValue 100
+                    .range_slider
+                        | <input type="text" id="range" name="example_name" value="" />
+                    #ex6SliderVal
+                .contract_amount
+                    header.income_block_calculate_header Количество подписаных договоров
+                    #rangeValueTwo 5
+                    .range_slider
+                        | <input type="text" id="range_two" name="example_name" value="" />
+                    #ex6SliderValTwo
+
+        .calculate_result_block
+            .calculate_result_block_header
+                .calculate_result_block_text Ваш доход составит:
+                #rangeResult
+                .calculate_result_block_text рублей в месяц
+            .calculate_result_block_content 850 000 руб. с договоров + 150 000 рублей бонусов
+            .btn_begin_earn
+                span.svg_wr
+                    |  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><defs><style>.svg{fill: #333333; fill-rule: evenodd}</style></defs><path class="svg" d="M134,481a7,7,0,1,1,7-7A7,7,0,0,1,134,481Zm0-13a6,6,0,1,0,6,6A6,6,0,0,0,134,468Zm-0.367,9.182a0.5,0.5,0,0,1-.707-0.708L135.4,474l-2.475-2.474a0.5,0.5,0,1,1,.707-0.707l2.829,2.828a0.5,0.5,0,0,1,0,.707Z" transform="translate(-127 -467)"/></svg>
+                | Начать зарабатывать
+
+        .question_block
+            header.question_header Остались вопросы? Позвоните нам<br>и мы с удовольствием дадим вам ответы о партнерской программе
+            .number_phone
+                .phone_icon
+                header.number_header 8 (800) 555-89-02
+            header.call_free (звонок по России бесплатно)
+
+        footer.main_footer
+            .contacts_block
+                .contacts_block_logo
+                    a(href="/") CROCOTIME
+                .contacts_block_content.indent © 2016 CrocoTime – программа для автоматического<br>учета и анализа рабочего времени
+                .contacts_block_content
+                    .contacts_block_content_left Телефон
+                    .contacts_block_content_right 8-800-555-89-02<br>8-495-150-31-45
+                .contacts_block_content
+                    .contacts_block_content_left Эл. почта
+                    .contacts_block_content_right.contacts_block_content_right_email
+                        a(href="/") crocotime@infomaximum.com
+                .contacts_block_content
+                    .contacts_block_content_left Skype
+                    .contacts_block_content_right.contacts_block_content_right_skype
+                        a(href="/") infomaximum
+
+            .footer_menu_block
+                .footer_menu_block_header О ПРОДУКТЕ
+                .footer_menu_block_item.indent_item
+                    a(href="#") Главная
+                .footer_menu_block_item
+                    a(href="#") Возможности
+                .footer_menu_block_item
+                    a(href="#") Тарифы
+                .footer_menu_block_item
+                    a(href="#") Онлайн-демо
+                .footer_menu_block_item
+                    a(href="#") Клиенты
+
+            .footer_menu_block
+                .footer_menu_block_header ПОДДЕРЖКА
+                .footer_menu_block_item.indent_item
+                    a(href="#") Установка
+                .footer_menu_block_item
+                    a(href="#") API
+                .footer_menu_block_item
+                    a(href="#") FAQ
+                .footer_menu_block_item
+                    a(href="#") Задать вопрос
+                .footer_menu_block_item
+                    a(href="#") Документация
+
+            .footer_menu_block
+                .footer_menu_block_header О КОМПАНИИ
+                .footer_menu_block_item.indent_item
+                    a(href="#") О нас
+                .footer_menu_block_item
+                    a(href="#") Партнерство
+                .footer_menu_block_item
+                    a(href="#") Блог
+                .footer_menu_block_item
+                    a(href="#") Пресса о нас
+                .footer_menu_block_item
+                    a(href="#") Конфиденциальность
+                .footer_menu_block_item
+                    a(href="#") Лицензионное<br>соглашение
+
+            .footer_menu_block
+                .footer_menu_block_header ЯЗЫК САЙТА
+                .footer_menu_block_item.indent_item.footer_languages
+                    .ru_icon
+                    a(href="#") Русский
+                .footer_menu_block_item.footer_languages
+                    .en_icon
+                    a(href="#") Английский

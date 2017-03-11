@@ -1,0 +1,11 @@
+//developments files
+.project
+.idea/
+yiic.bat
+.htaccess
+composer.phar
+
+//project files
+*local.php
+/public/index.php
+*/node_modules/
